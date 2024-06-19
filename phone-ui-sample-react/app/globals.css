@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+
+  h1 {
+    @apply text-8xl font-bold;
+  }
+
+  h2 {
+    @apply text-6xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  mark {
+    @apply bg-transparent font-bold text-black;
+  }
+}
