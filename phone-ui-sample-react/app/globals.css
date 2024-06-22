@@ -28,6 +28,30 @@
   }
 
   mark {
-    @apply bg-transparent font-bold text-black;
+    @apply bg-transparent font-bold;
+  }
+
+  .layout {
+    @apply flex flex-row justify-center justify-items-center items-center gap-3 p-3;
+  }
+
+  .section {
+    @apply flex flex-col justify-center justify-items-center items-center h-fit w-full max-w-4xl my-20 gap-3;
+  }
+
+  .btn-text {
+    @apply transition-all opacity-50 hover:opacity-100;
+  }
+
+  .btn {
+    @apply hover:bg-opacity-80 transition-all rounded-xl layout py-2 px-5;
+  }
+
+  .btn-hidden {
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-transparent hover:bg-black/5 text-black layout py-2 px-5;
+  }
+
+  .btn-chip {
+    @apply hover:bg-opacity-80 transition-all layout p-3;
   }
 }
